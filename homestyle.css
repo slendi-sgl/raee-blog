@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #161B22;
+  background: #f0f2f5;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+a:hover { color: #6c5ce7; }
+
+header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #6c5ce7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 80px 16px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('image.png') center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(90deg,#6c5ce7,#a29bfe);
+  color: white;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.articles h2 {
+  color: rgba(90,47,214,.9);
+}
+
+.articles img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.article-card {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(216,216,216,.69);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.article-content {
+  padding: 16px;
+  border: 1px solid rgba(216,216,216,.69);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar ul {
+  margin-left: 15px;
+}
+
+footer {
+  padding: 32px 16px;
+  text-align: center;
+  background: #fff;
+}
